@@ -18,6 +18,8 @@ pedra, papel ou tesoura. Mas sabendo que:
 3° Papel ganha da pedra, mas perde para a tesoura`);
 console.log();
 
+
+
 let rodadas = +prompt("Esolha o número de rodadas! ");
 
 
@@ -43,7 +45,8 @@ while (escolhaJogador >2 || escolhaJogador < 0){
 console.log(`Minha escolha é: ${objetos[escolhaJogador]}`);
 console.log(`Escolha do PC: ${objetos[numeroAleatorio]}`);
 console.log()
-   if(
+//Ordem de PREDECÊNCIA 1° "!" depois "&&" e por ultimo "||"
+   if(  
        (objetos[escolhaJogador] == objetos[0] && objetos[numeroAleatorio] == objetos[2] ) || 
        (objetos[escolhaJogador] == objetos[1] && objetos[numeroAleatorio] == objetos[0] ) ||
        (objetos[escolhaJogador] == objetos[2] && objetos[numeroAleatorio] == objetos[1] )
